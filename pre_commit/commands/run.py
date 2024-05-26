@@ -206,10 +206,10 @@ def _run_single_hook(
         files_modified = diff_before != diff_after
 
         if retcode or files_modified:
-            print_color = color.RED
+            print_color = color.RED_FG
             status = 'Failed'
         else:
-            print_color = color.GREEN
+            print_color = color.GREEN_FG
             status = 'Passed'
 
         output.write_line(color.format_color(status, print_color, use_color))

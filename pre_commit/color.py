@@ -62,7 +62,8 @@ YELLOW = '\033[43;30m'
 TURQUOISE = '\033[46;30m'
 SUBTLE = '\033[2m'
 NORMAL = '\033[m'
-
+GREEN_FG = '\033[1;32;44m'
+RED_FG = '\033[1;32;41m'
 
 def format_color(text: str, color: str, use_color_setting: bool) -> str:
     """Format text with color.
